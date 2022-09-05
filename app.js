@@ -21,10 +21,6 @@ app.get("/clarke", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/clarke.html"));
 });
 
-app.get("/hamilton", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/hamilton.html"));
-});
-
 app.get("/404", (req, res) => {
   res.send("Error página no encontrada");
 });
