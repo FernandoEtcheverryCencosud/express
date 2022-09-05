@@ -5,7 +5,7 @@ const puerto = 3030;
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+/* app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/index.html"));
 });
 
@@ -45,10 +45,14 @@ app.get("/lovelace", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/lovelace.html"));
 });
 
+app.get("/hamilton", (req, res)=> {
+  res.sendFile(path.join(__dirname, "/views/berners-lee.html"))
+}); */
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/home.html"));
+});
+
 app.listen(3030, () => {
   console.log(`Servidor Corriendo en el puerto ${puerto}`);
 });
-
-app.get("/hamilton", (req, res)=> {
-  res.sendFile(path.join(__dirname, "/views/berners-lee.html"))
-})
