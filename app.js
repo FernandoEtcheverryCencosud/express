@@ -20,6 +20,9 @@ app.get("/berners-lee", (req, res) => {
 app.get("/clarke", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/clarke.html"));
 });
+app.get("/hopper", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/hopper.html"));
+});
 
 app.get("/404", (req, res) => {
   res.send("Error página no encontrada");
