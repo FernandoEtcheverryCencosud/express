@@ -21,9 +21,9 @@ app.get("/clarke", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/clarke.html"));
 });
 
-app.get("/hamilton", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/hamilton.html"));
-});
+app.get("/hamilton", (req, res)=> {
+  res.sendFile(path.join(__dirname, "/views/berners-lee.html"))
+})
 
 app.get("/404", (req, res) => {
   res.send("Error página no encontrada");
@@ -32,3 +32,7 @@ app.get("/404", (req, res) => {
 app.listen(3030, () => {
   console.log(`Servidor Corriendo en el puerto ${puerto}`);
 });
+
+app.get("/hamilton", (req, res)=> {
+  res.sendFile(path.join(__dirname, "/views/berners-lee.html"))
+})
