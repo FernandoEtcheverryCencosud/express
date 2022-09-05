@@ -28,6 +28,10 @@ app.get("/404", (req, res) => {
   res.send("Error página no encontrada");
 });
 
+app.get("/lovelace", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/lovelace.html"));
+});
+
 app.listen(3030, () => {
   console.log(`Servidor Corriendo en el puerto ${puerto}`);
 });
