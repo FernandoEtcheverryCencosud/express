@@ -6,6 +6,8 @@ Gris claro: #ebebeb;
 Verde: #39b54a; 
 
 */
+@import url("./main/main.css");
+@import url("./header/header.css");
 
 :root{
     --amarillo: #EAC926;
@@ -16,19 +18,19 @@ Verde: #39b54a;
     --verde: #39b54a; 
 }
 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
-section h2{
-    font-size: 24px
-}
-
-.precios{
-    font-size: 18px;
-}
-
-.descuentos, li>h5{
-    font-size: 16px;
+.fas{
+    font-size: 2em;
+    margin-bottom: 10px;
 }

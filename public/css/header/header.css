@@ -1,0 +1,24 @@
+nav{
+    background-color: var(--gris-claro);
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul{
+    display: none;
+}
+
+
+@media (min-width:361px){
+
+    nav > ul{
+        display: initial;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+}
+@media (min-width:769px){
+
+}
