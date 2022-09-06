@@ -8,6 +8,7 @@ Verde: #39b54a;
 */
 @import url("./main/main.css");
 @import url("./header/header.css");
+@import url("./footer/footer.css");
 
 :root{
     --amarillo: #EAC926;
