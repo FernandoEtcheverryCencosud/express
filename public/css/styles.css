@@ -10,28 +10,56 @@ Verde: #39b54a;
 @import url("./header/header.css");
 @import url("./footer/footer.css");
 
-:root{
-    --amarillo: #EAC926;
-    --azul:#03264C;
-    --celeste:#1259c3;
-    --gris-oscuro: #666;
-    --gris-claro: #ebebeb;
-    --verde: #39b54a; 
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
 }
 
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+body {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--gris-claro);
 }
 
-.fas{
-    font-size: 2em;
-    margin-bottom: 10px;
+.fas {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.precio-container {
+  display: flex;
+}
+.precios {
+  width: 30%;
+}
+.descuentos {
+  width: 70%;
+  text-align: end;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+}
+article > div {
+  position: relative;
 }

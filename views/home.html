@@ -1,227 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-top">
+          <div class="logo">
+            <img
+              class="responsive"
+              src="./images/logo-mercado-liebre.svg"
+              alt="Logo de Mercado Liebre"
+            />
+          </div>
 
-<body>
-  <header>
-    <nav>
-      <picture>
-        <source srcset="./images/phone-size/logo-mercado-liebre-svg-phoneSize.png" media="(max-width:400px)">
-        <img src="./images/logo-mercado-liebre.svg" width="200px" alt="Logo de Mercado Liebre" />
-      </picture>
-      <input type="text" placeholder="Buscar..." />
-      <p>Comprá en cuotas y sin tarjeta de crédito</p>
-      <ul>
-        <li><a href="/ofertas">Ofertas</a></li>
-        <li><a href="/tiendas-oficiales">Tiendas Oficiales</a></li>
-        <li><a href="/vender">Vender</a></li>
-        <li><a href="/ayuda">Ayuda</a></li>
-      </ul>
-      <ul>
-        <li><a href="/registro">Creá tu cuenta</a></li>
-        <li><a href="/login">Ingresá</a></li>
-        <li><a href="/mis-compras">Mis compras</a></li>
-      </ul>
-      <div class="burger-menu">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
-
-  </header>
-  <main>
-
-    <section>
+          <input type="text" placeholder="Buscar..." />
+        </div>
+        <p class="nav-slogan">Comprá en cuotas y sin tarjeta de crédito</p>
+        <div class="navbar-menus">
+          <ul>
+            <li><a href="/ofertas">Ofertas</a></li>
+            <li><a href="/tiendas-oficiales">Tiendas Oficiales</a></li>
+            <li><a href="/vender">Vender</a></li>
+            <li><a href="/ayuda">Ayuda</a></li>
+          </ul>
+          <ul>
+            <li><a href="/registro">Creá tu cuenta</a></li>
+            <li><a href="/login">Ingresá</a></li>
+            <li><a href="/mis-compras">Mis compras</a></li>
+          </ul>
+        </div>
+        <div class="burger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
       <h2>Basado en tu última visita</h2>
-      <article>
-        <picture>
-          <source srcset="./images/phone-size/img-cafetera-moulinex-phoneSize.png" media="(max-width:400px)">
-          <img src="./images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" />
-        </picture>
-        <div>
-          <ul>
-            <li class="precios">6.770 puntos</li>
-            <li class="descuentos">40% off</li>
-            <li>
-              <h5>Cafetera Moulinex</h5>
-            </li>
-            <button>
-              <i class="fas fa-shipping-fast"></i>
-            </button>
-          </ul>
-        </div>
-        
-      </article>
-      <article>
-        <picture>
-          <source srcset="./images/phone-size/img-macbook-pro-2019-phoneSize.png" media="(max-width:400px)">
+      <section>
+        <article>
+          <img
+            src="./images/img-cafetera-moulinex.jpg"
+            alt="Cafetera Moulinex"
+          />
+
+          <div>
+            <div class="precio-container">
+              <p class="precios">6.770 puntos</p>
+              <p class="descuentos">40% off</p>
+            </div>
+
+            <h5>Cafetera Moulinex</h5>
+
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+        <article>
           <img src="./images/img-macbook-pro-2019.jpg" alt="Macbook Pro 2019" />
-        </picture>
-        <div>
-          <ul>
-  
-            <li class="precios">230.000 puntos</li>
-            <li class="descuentos">20% off</li>
-            <li>
-              <h5>MacBook Pro 2019</h5>
-            </li>
-            <button>
-              <i class="fas fa-shipping-fast"></i>
-            </button>
-          </ul>
 
-        </div>
-      </article>
-      <article>
-        <picture>
-          <source srcset="./images/phone-size/img-samsung-galaxy-s10-phoneSize.png" media="(max-width:400px)">
-          <img src="./images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" />
-        </picture>
-        <div>
-            <ul>
-              <li class="precios">670.500 puntos</li>
-              <li class="descuentos">10% off</li>
-              <li>
-                <h5>Samsung Galaxy S10</h5>
-              </li>
-              <button>
-                <i class="fas fa-shipping-fast"></i>
-              </button>
-            </ul>
+          <div>
+            <div class="precio-container">
+              <p class="precios">230.000 puntos</p>
+              <p class="descuentos">20% off</p>
+            </div>
 
-        </div>
-      </article>
-      <article>
-        <picture>
-          <source srcset="./images/phone-size/img-tv-samsung-smart-phoneSize.png" media="(max-width:400px)">
+            <h5>MacBook Pro 2019</h5>
+
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+        <article>
+          <img
+            src="./images/img-samsung-galaxy-s10.jpg"
+            alt="Samsung Galaxy S10"
+          />
+
+          <div>
+            <div class="precio-container">
+              <p class="precios">670.500 puntos</p>
+              <p class="descuentos">10% off</p>
+            </div>
+
+            <h5>Samsung Galaxy S10</h5>
+
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+        <article>
           <img src="./images/img-tv-samsung-smart.jpg" alt="Samsung Smart TV" />
-        </picture>
-        <div>
-          <ul>
-  
-            <li class="precios">23.200 puntos</li>
-            <li class="descuentos">5% off</li>
-            <li>
-              <h5>SmartTv</h5>
-            </li>
-            <button>
-              <i class="fas fa-shipping-fast"></i>
-            </button>
-          </ul>
 
-        </div>
-      </article>
-    </section>
+          <div>
+            <div class="precio-container">
+              <p class="precios">23.200 puntos</p>
+              <p class="descuentos">5% off</p>
+            </div>
 
-    <section>
+            <h5>SmartTv</h5>
+
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+      </section>
+
       <h2>Sección de Ofertas</h2>
-      <article>
-        <picture>
-          <source srcset="./images/phone-size/img-cafetera-moulinex-phoneSize.png" media="(max-width:400px)">
-          <img src="./images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" />
-        </picture>
-        <div>
-          <ul>
-            <li class="precios">6.770 puntos</li>
-            <li class="descuentos">40% off</li>
-            <li>
-              <h5>Cafetera Moulinex</h5>
-            </li>
-            <button>
-              <i class="fas fa-shipping-fast"></i>
-            </button>
-          </ul>
+      <section>
+        <article>
+          <img
+            src="./images/img-cafetera-moulinex.jpg"
+            alt="Cafetera Moulinex"
+          />
 
-        </div>
-      </article>
-      <article>
-        <div>
-          <picture>
-            <source srcset="./images/phone-size/img-macbook-pro-2019-phoneSize.png" media="(max-width:400px)">
-            <img src="./images/img-macbook-pro-2019.jpg" alt="Macbook Pro 2019" />
-          </picture>
-          <ul>
-            <li class="precios">230.000 puntos</li>
-            <li class="descuentos">20% off</li>
-            <li>
-              <h5>MacBook Pro 2019</h5>
-            </li>
-            <button>
-              <i class="fas fa-shipping-fast"></i>
-            </button>
-          </ul>
+          <div>
+            <div class="precio-container">
+              <p class="precios">6.770 puntos</p>
+              <p class="descuentos">40% off</p>
+            </div>
 
-        </div>
-      </article>
-      <article>
-        <picture>
-          <source srcset="./images/phone-size/img-samsung-galaxy-s10-phoneSize.png" media="(max-width:400px)">
-          <img src="./images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" />
-        </picture>
-        <div>
-          <ul>
-            <img src="" alt="">
-            <li class="precios">70.500 puntos</li>
-            <li class="descuentos">10% off</li>
-            <li>
-              <h5>Samsung Galaxy S10</h5>
-            </li>
-            <button>
-              <i class="fas fa-shipping-fast"></i>
-            </button>
-          </ul>
-        </div>
-      </article>
-      <article>
-        <picture>
-          <source srcset="./images/phone-size/img-tv-samsung-smart-phoneSize.png" media="(max-width:400px)">
+            <h5>Cafetera Moulinex</h5>
+
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+        <article>
+          <img src="./images/img-macbook-pro-2019.jpg" alt="Macbook Pro 2019" />
+
+          <div>
+            <div class="precio-container">
+              <p class="precios">230.000 puntos</p>
+              <p class="descuentos">20% off</p>
+            </div>
+
+            <h5>MacBook Pro 2019</h5>
+
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+        <article>
+          <img
+            src="./images/img-samsung-galaxy-s10.jpg"
+            alt="Samsung Galaxy S10"
+          />
+
+          <div>
+            <div class="precio-container">
+              <p class="precios">670.500 puntos</p>
+              <p class="descuentos">10% off</p>
+            </div>
+
+            <h5>Samsung Galaxy S10</h5>
+
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+        <article>
           <img src="./images/img-tv-samsung-smart.jpg" alt="Samsung Smart TV" />
-        </picture>
-        <div>
-          <ul>
-            <li class="precios">23.200 puntos</li>
-            <li class="descuentos">5% off</li>
-            <li>
-              <h5>SmartTv</h5>
-            </li>
-            <button>
-              <i class="fas fa-shipping-fast"></i>
-            </button>
-          </ul>
 
-        </div>
-      </article>
-    </section>
+          <div>
+            <div class="precio-container">
+              <p class="precios">23.200 puntos</p>
+              <p class="descuentos">5% off</p>
+            </div>
 
-  </main>
-  <footer>
-    <section>
-      <h3> Pagá con tarjeta o en efectivo </h3>
-      <p> Con nuestra tienda, tienes cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
-      </p>
-    </section>
+            <h5>SmartTv</h5>
 
-    <section>
-      <h3> Envío gratis desde 2.500 puntos </h3>
-      <p> Solo por estar registrad@ en nuestra tienda tienes envíos gratis en miles de productos. </p>
-    </section>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h3>Pagá con tarjeta o en efectivo</h3>
+        <p>
+          Con nuestra tienda, tienes cuotas sin interés con tarjeta o efectivo
+          en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </section>
 
-    <section>
-      <h3> Seguridad de principio a fin <h3>
-          <p> ¿No te gusta? ¡Devuélvelo! En nuestra tienda no hay nada que no puedas hacer, porque estás siempre
-            protegid@. </p>
-    </section>
-  </footer>
-</body>
+      <section>
+        <h3>Envío gratis desde 2.500 puntos</h3>
+        <p>
+          Solo por estar registrad@ en nuestra tienda tienes envíos gratis en
+          miles de productos.
+        </p>
+      </section>
 
+      <section>
+        <h3>Seguridad de principio a fin</h3>
+        <p>
+          ¿No te gusta? ¡Devuélvelo! En nuestra tienda no hay nada que no puedas
+          hacer, porque estás siempre protegid@.
+        </p>
+      </section>
+    </footer>
+  </body>
 </html>
