@@ -35,19 +35,43 @@ header .navbar-top {
 
 
 header .navbar-top .logo,
-header .navbar-top input {
+header .navbar-top form {
   height: 32px;
 }
 
-header .navbar-top input{
+header .navbar-top form{
   width: 80%;
-  border: none;
   border-radius: 3px;
+  display: flex;
   padding: 5px;
+  height: 32px;
+  max-width: 600px;
   background-color: #fff;
-  box-shadow:  1px 2px 0 rgba(0,0,0,.1);
+  box-shadow: 0px 1px 5px 1px rgba(0,0,0,.1);
+}
+header .navbar-top form #navbar-top__search{
+  border: none;
+  height: 100%;
+  width: 95%;
+  padding: 5px;
+  border-right: 1px solid rgba(102, 102, 102, 0.343);
+}
+header .navbar-top form #navbar-top__search:focus{
+  outline: none;
+}
+header .navbar-top form #navbar-top__button{
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  background-color: transparent;
 }
 
+header .navbar-top form #navbar-top__button > i{
+  font-size: 18px;
+  color: var(--gris-oscuro);
+}
 header .navbar-top .logo{
   width: 140px;
 }
@@ -80,16 +104,35 @@ header a {
     flex-direction: column;
     height: 100px;
     width: 100%;
+    position: relative;
     max-width: 1200px;
     margin: auto;
   }
 
+
   header > nav .navbar-top{
     padding: 5px;
-    margin: 0 auto;
+    margin: 0;
+    height: 60px;
     border-bottom: none;
+    width: 70%;
+  }
+  header .navbar-top .logo{
+    width: 180px;
   }
 
+  
+  header > nav .navbar-top form{
+    height: 39px;
+  }
+  header > nav > p{
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
   header .navbar-menus {
     margin: 0 auto;
     width: 100%;
