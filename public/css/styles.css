@@ -31,35 +31,4 @@ body {
   background-color: var(--gris-claro);
 }
 
-.fas {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
 
-.precio-container {
-  display: flex;
-}
-.precios {
-  width: 30%;
-}
-.descuentos {
-  width: 70%;
-  text-align: end;
-}
-
-main section article i {
-  display: block;
-  font-size: 16px;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #39b54a;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  bottom: 5px;
-}
-article > div {
-  position: relative;
-}
