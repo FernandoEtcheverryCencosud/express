@@ -1,0 +1,6 @@
+.registroForm {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  margin-top: 23px;
+}
