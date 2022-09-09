@@ -3,33 +3,32 @@ footer {
   background-color: white;
   padding: 15px 0;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
 }
-footer > section{
+footer > section {
   width: 100%;
   padding: 15px 55px;
-
 }
 
-footer > section > i{
+footer > section > i {
   font-size: 50px;
   color: var(--celeste);
+  transition: all 0.2s ease-in-out;
 }
 
-footer > section > i:hover{
+footer > section > i:hover {
   color: var(--amarillo);
 }
 
 @media (min-width: 361px) {
-  
 }
 
 @media (min-width: 769px) {
-  footer{
-    flex-direction: row ;
+  footer {
+    flex-direction: row;
   }
-  footer > section{
-    width: 33,333%;
+  footer > section {
+    width: 33, 333%;
     padding: 35px 15px;
     height: 242px;
     position: relative;
@@ -39,7 +38,7 @@ footer > section > i:hover{
     align-items: center;
   }
 
-  footer > section:not(:last-child)::after{
+  footer > section:not(:last-child)::after {
     content: "";
     width: 1px;
     position: absolute;
@@ -47,5 +46,4 @@ footer > section > i:hover{
     height: 80px;
     background-color: var(--gris-claro);
   }
-
 }
