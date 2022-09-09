@@ -4,8 +4,11 @@ header {
   width: 100vw;
   height: 100px;
   position: fixed;
+  display: flex;
+  justify-content: center;
   z-index: 99;
 }
+
 header nav {
   background-color: var(--amarillo);
   margin: 0;
