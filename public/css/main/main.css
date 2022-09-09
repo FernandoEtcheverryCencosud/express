@@ -77,6 +77,14 @@ main section article i {
   right: 20px;
   bottom: 5px;
 }
+
+.fa-heart:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5px;
+}
+
 @media (min-width: 361px) {
   main > section {
     flex-direction: row;
