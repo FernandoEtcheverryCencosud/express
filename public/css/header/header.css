@@ -1,11 +1,15 @@
 header {
   background-color: var(--amarillo);
   box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  z-index: 99;
 }
 header nav {
   background-color: var(--amarillo);
   margin: 0;
-  width: 100%;
+  width: 100vw;
   height: 87px;
   display: flex;
   justify-content: space-between;
@@ -13,8 +17,6 @@ header nav {
   padding: 0 15px;
   padding-bottom: 10px;
   font-size: 14px;
-  position: fixed;
-  z-index: 99;
 }
 
 header .navbar-menus {
