@@ -45,6 +45,7 @@ main section article > div {
 
 main section article .precio-container {
   display: flex;
+  height: 70px;
 }
 
 main section article .precios {
