@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link
       rel="stylesheet"
@@ -20,47 +19,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/views/login.css">
-</head>
+    <link rel="stylesheet" href="/css/views/login.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header-log">
-        <nav>
-            <div class="navbar-top">
-              <div class="logo">
-                <a href="/">
-                    <img
-                      class="responsive"
-                      src="./images/logo-mercado-liebre.svg"
-                      alt="Logo de Mercado Liebre"
-                    />
-
-                </a>
-              </div>
-            </div>
-        </nav>
+      <nav>
+        <div class="navbar-top">
+          <div class="logo">
+            <a href="/">
+              <img
+                class="responsive"
+                src="./images/logo-mercado-liebre.svg"
+                alt="Logo de Mercado Liebre"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <h2 class="form-title">Logueate</h2>
-        <section>
-            <div class="form-container">
-
-                <h3>Ingrese su Usuario</h3>
-                <form action="/login" method="POST">
-                    <div class="login-user">
-                        <label for="user-input">Nombre de Usuario:</label>
-                        <input placeholder="Usuario" type="text" name="user" id="user-input" minlength="4" required><br>
-    
-                    </div>
-                    <div>
-                        <label for="contrasena-input">Contraseña:</label>
-                        <input placeholder="Contraseña" type="password" name="contrasena" minlength="6" id="contrasena-input" required><br>
-                    </div>
-                    <button type="submit">Continuar</button>
-                </form>
+      <section>
+        <div class="form-container">
+          <h3>Ingrese a su cuenta</h3>
+          <form action="/login" method="POST">
+            <div class="login-user">
+              <input
+                placeholder="Usuario"
+                type="text"
+                name="user"
+                id="user-input"
+                minlength="4"
+                required
+              /><br />
             </div>
-        </section>
+            <div>
+              <input
+                placeholder="Contraseña"
+                type="password"
+                name="contrasena"
+                minlength="6"
+                id="contrasena-input"
+                required
+              /><br />
+            </div>
+            <button class="submit-btn" type="submit">Continuar</button>
+            <span>
+              Aún no tienes una cuenta?
+              <a href="/registro">Registrate aquí</a>
+            </span>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
