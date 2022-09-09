@@ -90,6 +90,11 @@ main section article i {
   bottom: 5px;
 }
 
+main section article i:hover {
+  transform: rotate(-90deg);
+  transition-duration: 2s;
+}
+
 .fa-heart:before {
   display: flex;
   align-items: center;
