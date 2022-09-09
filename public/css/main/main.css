@@ -21,7 +21,6 @@ main > section {
 }
 
 main section article {
-  /* text-align: center; */
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
