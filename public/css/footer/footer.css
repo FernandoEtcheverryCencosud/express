@@ -16,6 +16,10 @@ footer > section > i{
   color: var(--celeste);
 }
 
+footer > section > i:hover{
+  color: var(--amarillo);
+}
+
 @media (min-width: 361px) {
   
 }
