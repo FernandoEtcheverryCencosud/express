@@ -18,6 +18,7 @@ main > section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 370px;
 }
 
 main section article {
@@ -45,15 +46,15 @@ main section article > div {
 
 main section article .precio-container {
   display: flex;
-  height: 35px;
-  content-visibility: hidden;
+  height: 60px;
+  /* content-visibility: hidden; */
 }
 
-main section article:hover .precio-container {
+/* main section article:hover .precio-container {
   content-visibility: visible;
   height: 60px;
   transition-duration: 0.7s;
-}
+} */
 
 main section article .precios {
   font-size: 18px;
@@ -106,17 +107,35 @@ main section article i:hover {
   }
   main section article {
     max-width: 40%;
+  }
+  /*main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transform: scale(1.05);
+  } */
+}
+
+@media (min-width: 769px) {
+  main section article {
+    max-width: 20%;
+  }
+
+  main section article .precio-container {
+    height: 35px;
+    content-visibility: hidden;
+  }
+  
+  main section article:hover .precio-container {
+    content-visibility: visible;
+    height: 60px;
+    transition-duration: 0.7s;
+  }
+
+  main section article {
     transition: box-shadow 0.2s ease;
     transition: transform 0.2s ease-in-out;
   }
   main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     transform: scale(1.05);
-  }
-}
-
-@media (min-width: 769px) {
-  main section article {
-    max-width: 20%;
   }
 }
