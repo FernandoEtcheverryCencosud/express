@@ -1,6 +1,17 @@
-nav a{
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
   display: inline-block;
   height: 34px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .registroForm {
@@ -15,115 +26,160 @@ nav a{
   justify-content: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125);
   padding: 30px;
-  gap: 10px;
+  gap: 20px;
 }
 
-
-form > div{
-  width: 90%;
-  margin: 0 auto;
-}
-form > div input{
+form > div input {
   width: 100%;
 }
 
-form label{
+form label {
   margin: 3px 0;
 }
 
-form input{
-  width: 90%;
-  /* min-width: 214px;
-  max-width: 244px; */
+form input {
   height: 48px;
   border: none;
   color: #000;
   padding: 5px;
   margin-bottom: 5px;
-  border-bottom:1px solid #9d8b8b;
+  border-bottom: 1px solid #9d8b8b;
 }
-form input::placeholder{
-  color: #9d8b8b7a;
-  position: relative;
+
+form input::placeholder {
+  color: #352e2e7a;
   font-size: 18px;
-  left: 40%;
 }
 
-form .fecha-registro label:first-child{
-  position: relative;
-  left: 32%;
-  font-size: 16px;
+.avatar-label,
+.categorias-label,
+.perfil-label {
+  font-size: 18px;
+  color: #352e2e7a;
 }
 
-form input:focus{
+.perfil-label {
+  margin: 0;
+}
+
+.categorias-label {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.perfil-select {
+  margin-top: 10px;
+}
+
+.avatar-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.nacimiento {
+  display: flex;
+  color: #352e2e7a;
+  font-size: 18px;
+}
+
+form input:focus {
   outline: none;
   border-radius: 3px;
   border: 1px solid blue;
 }
 
-
-form > span{
+form > span {
   display: block;
-  margin: 10px auto 5px;
-  width: 90%;
   font-size: 16px;
   text-align: center;
 }
 
-form > .registro-radio{
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
-}
-form > .registro-radio label{
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  justify-content: center;
-  height: 38px;
-}
-form > .registro-radio input{
-  width: 25px;
-  margin: 0 20px;
-}
-
-form > .registro-radio input:last-child{
-  margin-left: 15px;
-  
-}
-
-form > .registro-categorias {
+.registro-perfil {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.user-pref {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+form > .registro-perfil > span {
+  color: #352e2e7a;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.categorias-inputs {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
 }
 
-form > .registro-categorias > div{
+.registro-categorias > div {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-form > .registro-categorias input{
+.registro-categorias input {
   width: 16px;
+  height: 16px;
 }
 
-form > .registro-categorias > div label{
+form > .registro-categorias > div label {
   display: flex;
   align-items: flex-start;
   width: 40px;
 }
 
-form > .registro-categorias > label{
+form > .registro-categorias > label {
   align-self: flex-start;
   display: flex;
   justify-content: flex-start;
 }
 
-@media (min-width: 361px) {
-  form .fecha-registro label:first-child{
-    width: 30%;
-    max-width: 160px;
+.button-group-registro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.register-btn {
+  background-color: var(--celeste);
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  border-radius: 2px;
+  margin-top: 30px;
+}
+
+.perfil-select {
+  background-color: var(--celeste);
+  color: #fff;
+  border: none;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 2px;
+}
+
+.reset-btn {
+  background-color: white;
+  border: none;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .name-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name-container input {
+    width: 45%;
   }
 }
