@@ -35,7 +35,6 @@ main section article img {
   max-width: 450px;
 }
 
-
 main section article > div {
   position: relative;
 }
@@ -44,26 +43,23 @@ main section article > div {
   padding: 15px;
 }
 
-
 main section article .precio-container {
   display: flex;
   height: 35px;
   content-visibility: hidden;
 }
 
-main section article .precio-container:hover {
+main section article:hover .precio-container {
   content-visibility: visible;
   height: 60px;
   transition-duration: 0.7s;
 }
-
 
 main section article .precios {
   font-size: 18px;
   color: var(--verde);
   width: 30%;
 }
-
 
 main section article .descuentos {
   color: var(--gris-oscuro);
@@ -111,7 +107,7 @@ main section article i:hover {
   main section article {
     max-width: 40%;
     transition: box-shadow 0.2s ease;
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
   main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
