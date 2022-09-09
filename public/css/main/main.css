@@ -1,6 +1,7 @@
 main {
   width: 90vw;
-  margin: 50px auto;
+  margin: 0 auto 50px auto;
+  padding-top: 140px;
 }
 
 main > h2 {
@@ -122,7 +123,7 @@ main section article i:hover {
     height: 35px;
     content-visibility: hidden;
   }
-  
+
   main section article:hover .precio-container {
     content-visibility: visible;
     height: 60px;
