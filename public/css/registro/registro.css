@@ -8,6 +8,16 @@ nav a {
   height: 34px;
 }
 
+nav div{
+  padding: 5px;
+    margin: 0;
+    height: 60px;
+    border-bottom: none;
+    width: 70%;
+    align-items: center;
+    display: flex;
+}
+
 .form-title {
   text-align: center;
   font-size: 2rem;
